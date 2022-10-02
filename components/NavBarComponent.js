@@ -15,7 +15,7 @@ export const NavBarComponent = () => {
 
     <Navbar key={false} expand={false} className="mb-3">
       <Container fluid>
-        <Navbar.Brand className='d-flex align-items-center' id='titutlo-nav' href="http://estoy-arto.vercel.app/">
+        <Navbar.Brand className='d-flex align-items-center' id='titutlo-nav' href="./">
           <Image
             alt='Logo'
             src='/assets/logo.png'
@@ -45,6 +45,7 @@ export const NavBarComponent = () => {
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
+              <Nav.Link className='letra-nav text-white' href="./">INICIO</Nav.Link>
               <Nav.Link className='letra-nav text-white' href="/sobre-nosotros">SOBRE NOSOTROS</Nav.Link>
               <Nav.Link className='letra-nav text-white' href="/galeria">GALERÍA</Nav.Link>
               <Nav.Link className='letra-nav text-white' href="https://instagram.com/proyectozondar?igshid=YmMyMTA2M2Y=">CONTÁCTANOS</Nav.Link>

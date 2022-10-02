@@ -164,7 +164,7 @@ export default function Home() {
                 </Row>
               </Container>
             </section>
-            <section className='cartas-nosotros d-flex'>
+            <section className='cartas-nosotros d-flex justify-content-center align-items-center'>
               <Nosotros/>
               <Areas className='areas'/> 
             </section>

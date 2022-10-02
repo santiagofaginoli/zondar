@@ -7,12 +7,11 @@ const Sliding = () => {
         <Carousel className=' carrusel' >
             <Carousel.Item>
                 <Card style={{ width: '18rem', marginBottom: '35px' }} className='carrusel-card'>
-                    <Card.Img variant="top" src="https://bangbranding.com/blog/wp-content/uploads/2016/09/700x511_SliderInterior.jpg" />
+                    <Card.Img variant="top" src={'/assets/img/4.jpeg'} />
                     <Card.Body className='carrusel-body'>
-                        <Card.Title>Card Title</Card.Title>
+                        <Card.Title>Titulo de la carta</Card.Title>
                         <Card.Text>
-                        Some quick example text to build on the card title and make up the
-                        bulk of the cards content.
+                            Mas texto que nos pidan que agreguemos.
                         </Card.Text>
                         <Button variant="primary">Go somewhere</Button>
                     </Card.Body>
@@ -20,12 +19,11 @@ const Sliding = () => {
             </Carousel.Item>
             <Carousel.Item>
                 <Card style={{ width: '18rem', marginBottom: '35px' }} className='carrusel-card'>
-                    <Card.Img variant="top" src="https://bangbranding.com/blog/wp-content/uploads/2016/09/700x511_SliderInterior.jpg" />
+                    <Card.Img variant="top" src={'/assets/img/5.jpeg'} />
                     <Card.Body className='carrusel-body'>
-                        <Card.Title>Card Title</Card.Title>
+                        <Card.Title>Titulo de la carta</Card.Title>
                         <Card.Text>
-                        Some quick example text to build on the card title and make up the
-                        bulk of the cards content.
+                            Mas texto que nos pidan que agreguemos.
                         </Card.Text>
                         <Button variant="primary">Go somewhere</Button>
                     </Card.Body>
@@ -33,12 +31,11 @@ const Sliding = () => {
             </Carousel.Item>
             <Carousel.Item>
                 <Card style={{ width: '18rem', marginBottom: '35px' }} className='carrusel-card'>
-                    <Card.Img variant="top" src="https://bangbranding.com/blog/wp-content/uploads/2016/09/700x511_SliderInterior.jpg" />
+                    <Card.Img variant="top" src={'/assets/img/6.jpeg'} />
                     <Card.Body className='carrusel-body'>
-                        <Card.Title>Card Title</Card.Title>
+                        <Card.Title>Titulo de la carta</Card.Title>
                         <Card.Text>
-                        Some quick example text to build on the card title and make up the
-                        bulk of the cards content.
+                            Mas texto que nos pidan que agreguemos.
                         </Card.Text>
                         <Button variant="primary">Go somewhere</Button>
                     </Card.Body>
