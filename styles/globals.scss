@@ -2,7 +2,7 @@ body {
   background: url("../public/assets/fondo2.png") center center/cover no-repeat !important;
 }
 .navegacion{
-  background: linear-gradient(270deg, #1B1252 0%, rgba(15, 15, 42, 0) 20%);
+  background: linear-gradient(270deg, #1B1252 0%, rgba(15, 15, 42, 0) 50%);
 }
 .div-preloader {
   margin-top: 10rem;
@@ -42,7 +42,7 @@ body {
 }
 #boton-nav {
   color: white;
-  background-color: white;
+  background-color:#9548c6
 }
 #titutlo-nav {
   color: white;
@@ -256,7 +256,15 @@ li {
   margin-left: 60px;
 }
 
-
+#letra-nav {
+  margin-left: 5px;
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 2px;
+ }
+ #letra-nav:hover{
+  color: #9548c6;
+ }
 .sonda-foto {
   width: 90%;
   height: 90%;

@@ -1,14 +1,13 @@
 import React from 'react';
 import Layout from '../components/Layout/Layout';
-import { Button, Container, Row, Image } from 'react-bootstrap';
+import { Button, Container, Row, Image,Card } from 'react-bootstrap';
 import Head from 'next/head'
 import { motion } from "framer-motion";
 import { FaBell } from "react-icons/fa";
 import { FaQuestion, FaArrowDown, FaCircle } from "react-icons/fa";
 import { useState, useEffect } from 'react';
 import Card2 from '../components/Card2';
-import Nosotros from '../components/SliderCard';
-import Areas from '../components/SliderCard2';
+
 
 export default function Home() {
   const [loading, setLoading] = useState(false)
@@ -21,11 +20,6 @@ export default function Home() {
 
   const [state, setState] = useState(false);
 
-
-
-
-
-
   return (
     <Layout>
       {
@@ -33,9 +27,7 @@ export default function Home() {
         loading ?
 
           <div className='d-flex justify-content-center align-items-center div-preloader'>
-
             <motion.div
-
               animate={{ rotate: 360 }}
               transition={{
                 repeat: Infinity,
@@ -53,8 +45,6 @@ export default function Home() {
             </motion.div>
           </div>
           :
-
-
           <motion.main
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -125,7 +115,6 @@ export default function Home() {
                 </Row>
                 <Row>
                   <div className='col-3'>
-
                   </div>
                   <Card2
                     state={state}
@@ -134,15 +123,14 @@ export default function Home() {
                     content='Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum lorem lorem lorem lorem lorem lorem lorem lorem lorem  Lorem Ipsum lorem lorem lorem lorem lorem lorem lorem lorem lorem'
                   ></Card2>
                   <motion.div
-                    initial={{ y: 30 }}
-                    animate={{ y: -30 }}
+                    initial={{ y: -30 }}
+                    animate={{ y: 30 }}
                     transition={{
                       repeat: Infinity,
                       repeatType: "mirror",
                       duration: 2
                     }}
                     className='col-lg-6 d-flex col-12'>
-
                     <Image
                       alt='sonda'
                       src='/assets/globo1.png'
@@ -166,14 +154,33 @@ export default function Home() {
             </section>
             <Row className='d-flex justify-content-center cartas-nosotros col-12'>
               <div className=' col-12 d-flex justify-content-center align-items-center col-lg-6'>
-                <Nosotros/>
+                <Card style={{ width: '18rem', marginBottom: '35px' }} className='carrusel-card'>
+                  <Card.Img variant="top" src={'/assets/img/1.JPG'} />
+                    <Card.Body className='carrusel-body d-flex justify-content-center'>
+                      <Row>
+                      <Card.Title className='text-center'>Titulo de la carta</Card.Title>
+                  <Card.Text  className='text-center'>
+    Mas texto que nos pidan que agreguemos.
+  </Card.Text>
+  <Button  className='text-center' variant="primary">Go somewhere</Button>
+                      </Row>
+                    </Card.Body>
+                </Card>
               </div>
               <div className='col-12 d-flex justify-content-center align-items-center col-lg-6'>
-                <Areas />
+              <Card style={{ width: '18rem', marginBottom: '35px' }} className='carrusel-card'>
+                <Card.Img variant="top" src={'/assets/img/1.JPG'} />
+                  <Card.Body className='carrusel-body'>
+                    <Card.Title>Titulo de la carta</Card.Title>
+                      <Card.Text>
+                        Mas texto que nos pidan que agreguemos.
+                      </Card.Text>
+                      <Button variant="primary">Go somewhere</Button>
+                  </Card.Body>
+              </Card>
               </div>
             </Row>
           </motion.main>
-
       }
     </Layout>
   );

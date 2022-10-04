@@ -45,10 +45,10 @@ export const NavBarComponent = () => {
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
-              <Nav.Link className='letra-nav text-white' href="./">INICIO</Nav.Link>
-              <Nav.Link className='letra-nav text-white' href="/sobre-nosotros">SOBRE NOSOTROS</Nav.Link>
-              <Nav.Link className='letra-nav text-white' href="/galeria">GALERÍA</Nav.Link>
-              <Nav.Link className='letra-nav text-white' href="https://instagram.com/proyectozondar?igshid=YmMyMTA2M2Y=">CONTÁCTANOS</Nav.Link>
+              <Nav.Link className='letra-nav  ' id='letra-nav' href="./">INICIO</Nav.Link>
+              <Nav.Link className='letra-nav ' id='letra-nav' href="/sobre-nosotros">SOBRE NOSOTROS</Nav.Link>
+              <Nav.Link className='letra-nav ' id='letra-nav' href="/galeria">GALERÍA</Nav.Link>
+              <Nav.Link className='letra-nav ' id='letra-nav' href="https://instagram.com/proyectozondar?igshid=YmMyMTA2M2Y=">CONTÁCTANOS</Nav.Link>
             </Nav>
           </Offcanvas.Body>
         </Navbar.Offcanvas>
