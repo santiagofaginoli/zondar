@@ -13,7 +13,7 @@ export const NavBarComponent = () => {
 
   return (
 
-    <Navbar key={false} expand={false} className="mb-3">
+    <Navbar key={false} expand={false} className="mb-3 navegacion">
       <Container fluid>
         <Navbar.Brand className='d-flex align-items-center' id='titutlo-nav' href="./">
           <Image

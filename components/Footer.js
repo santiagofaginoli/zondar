@@ -31,7 +31,7 @@ const Footer = () => {
                         </Col>
                         <Col>
                             <FaTiktok/>
-                            <a href="https://www.tiktok.com/@proyectozondar_?_t=8W9LVBEz8bO&_r=1" className="redes">TikTok</a>
+                            <a href="https://www.tiktok.com/@proyectozondar_?_t=8W9LVBEz8bO_r=1" className="redes">TikTok</a>
                         </Col>
                     </Row>
                 </Col>

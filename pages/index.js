@@ -164,10 +164,14 @@ export default function Home() {
                 </Row>
               </Container>
             </section>
-            <section className='cartas-nosotros d-flex justify-content-center align-items-center'>
-              <Nosotros/>
-              <Areas className='areas'/> 
-            </section>
+            <Row className='d-flex justify-content-center cartas-nosotros col-12'>
+              <div className=' col-12 d-flex justify-content-center align-items-center col-lg-6'>
+                <Nosotros/>
+              </div>
+              <div className='col-12 d-flex justify-content-center align-items-center col-lg-6'>
+                <Areas />
+              </div>
+            </Row>
           </motion.main>
 
       }
